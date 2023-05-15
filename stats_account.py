@@ -987,7 +987,7 @@ def calc(filename):
     df_class = pd.DataFrame(list(zip(l_t_resa,l_ty_resa,l_nb_resa,l_ca_resa)), columns=['Type','Classe',"NB_RESA",'CA'])
     df_class.to_csv(f"csv/BR/br_result/{filename}/top_classes.csv")
 
-    # # TOP CARRIER
+    # TOP CARRIER
     df_four = df.groupby(["NEW_TYPE",'FOURNISSEUR'])[["NEW_TOTAL_BILLED","NB_LEGS"]].sum(numeric_only=True).round(1).reset_index()
     #
     df_car = pd.DataFrame()

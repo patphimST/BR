@@ -8,7 +8,7 @@ from apiclient import discovery
 from httplib2 import Http
 from oauth2client import file, client, tools
 
-filename = "Rautureau"
+filename = "Rautureau "
 #
 # no_col_itemid(filename)
 # col_itemid_missrow(filename)
